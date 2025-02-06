@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+
+<Simulation_deps>
+
+  <Version XPSPNVER="1.0" EDKVER="14.7" />
+  <FPGA family="spartan3" device="xc3s400" package="pq208" speedgrade="-4" />
+  <File Type="MHS" URL="../../soft_processor.mhs" />
+
+
+</Simulation_deps>

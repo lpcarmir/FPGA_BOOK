@@ -1,0 +1,9 @@
+MODULE fa_4bit
+	SUBMODULE full_adder
+		INSTANCE u1
+	SUBMODULE full_adder
+		INSTANCE u2
+	SUBMODULE full_adder
+		INSTANCE u3
+	SUBMODULE full_adder
+		INSTANCE u4

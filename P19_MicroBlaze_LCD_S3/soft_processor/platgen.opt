@@ -1,0 +1,15 @@
+-p
+xc3s400pq208-4
+-lang
+vhdl
+-intstyle
+ise
+-lp
+C:/Xilinx/14.7/ISE_DS/EDK/data/wizards/
+-toplevel
+no
+-ti
+soft_processor_i
+-msg
+__xps/ise/xmsgprops.lst
+soft_processor.mhs

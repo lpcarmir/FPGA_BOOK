@@ -1,0 +1,2 @@
+net "clk" loc=P80;
+net "led" loc=P76;

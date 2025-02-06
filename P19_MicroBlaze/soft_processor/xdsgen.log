@@ -1,0 +1,238 @@
+WARNING:EDK:878 - Could not find IP doc
+   http://www.xilinx.com/cgi-bin/docs/ipdoc?c=plb_v46;v=v1_05_a;d=plb_v46.pdf
+WARNING:EDK:878 - Could not find IP doc
+   http://www.xilinx.com/cgi-bin/docs/ipdoc?c=lmb_v10;v=v2_00_b;d=pg087-lmb-v10.
+   pdf
+WARNING:EDK:878 - Could not find IP doc
+   http://www.xilinx.com/cgi-bin/docs/ipdoc?c=lmb_v10;v=v2_00_b;d=pg087-lmb-v10.
+   pdf
+WARNING:EDK:878 - Could not find IP doc
+   http://www.xilinx.com/cgi-bin/docs/ipdoc?c=lmb_bram_if_cntlr;v=v3_10_c;d=pg06
+   1-lmb-bram-if-cntlr.pdf
+WARNING:EDK:878 - Could not find IP doc
+   http://www.xilinx.com/cgi-bin/docs/ipdoc?c=lmb_bram_if_cntlr;v=v3_10_c;d=pg06
+   1-lmb-bram-if-cntlr.pdf
+WARNING:EDK:878 - Could not find IP doc
+   http://www.xilinx.com/cgi-bin/docs/ipdoc?c=bram_block;v=v1_00_a;d=bram_block.
+   pdf
+WARNING:EDK:878 - Could not find IP doc
+   http://www.xilinx.com/cgi-bin/docs/ipdoc?c=xps_gpio;v=v2_00_a;d=xps_gpio.pdf
+WARNING:EDK:878 - Could not find IP doc
+   http://www.xilinx.com/cgi-bin/docs/ipdoc?c=xps_uartlite;v=v1_02_a;d=xps_uartl
+   ite.pdf
+WARNING:EDK:878 - Could not find IP doc
+   http://www.xilinx.com/cgi-bin/docs/ipdoc?c=xps_timer;v=v1_02_a;d=xps_timer.pd
+   f
+WARNING:EDK:878 - Could not find IP doc
+   http://www.xilinx.com/cgi-bin/docs/ipdoc?c=clock_generator;v=v4_03_a;d=clock_
+   generator.pdf
+WARNING:EDK:878 - Could not find IP doc
+   http://www.xilinx.com/cgi-bin/docs/ipdoc?c=mdm;v=v2_10_a;d=pg062-mdm.pdf
+WARNING:EDK:878 - Could not find IP doc
+   http://www.xilinx.com/cgi-bin/docs/ipdoc?c=proc_sys_reset;v=v3_00_a;d=proc_sy
+   s_reset.pdf
+WARNING:EDK:878 - Could not find IP doc
+   http://www.xilinx.com/cgi-bin/docs/ipdoc?c=xps_intc;v=v2_01_a;d=xps_intc.pdf
+Generated Block Diagram.
+Rasterizing microblaze_0.jpg.....
+java.lang.Error: Probable fatal error:No fonts found.
+	at sun.font.FontManager.getDefaultPhysicalFont(Unknown Source)
+	at sun.font.FontManager.initialiseDeferredFont(Unknown Source)
+	at sun.font.FontManager.initialiseDeferredFonts(Unknown Source)
+	at sun.java2d.SunGraphicsEnvironment.loadFonts(Unknown Source)
+	at sun.font.FontManager.findFont2D(Unknown Source)
+	at sun.font.FontManager.getDefaultPhysicalFont(Unknown Source)
+	at sun.font.FontManager.initialiseDeferredFont(Unknown Source)
+	at sun.font.FontManager.initialiseDeferredFonts(Unknown Source)
+	at sun.java2d.SunGraphicsEnvironment.loadFonts(Unknown Source)
+	at sun.font.FontManager.findFont2D(Unknown Source)
+	at sun.font.FontManager.getDefaultPhysicalFont(Unknown Source)
+	at sun.font.FontManager.initialiseDeferredFont(Unknown Source)
+	at sun.font.FontManager.initialiseDeferredFonts(Unknown Source)
+	at sun.java2d.SunGraphicsEnvironment.loadFonts(Unknown Source)
+	at sun.font.FontManager.findFont2D(Unknown Source)
+	at sun.font.FontManager.getDefaultPhysicalFont(Unknown Source)
+	at sun.font.FontManager.initialiseDeferredFont(Unknown Source)
+	at sun.font.FontManager.initialiseDeferredFonts(Unknown Source)
+	at sun.java2d.SunGraphicsEnvironment.loadFonts(Unknown Source)
+	at sun.font.FontManager.findFont2D(Unknown Source)
+	at sun.font.FontManager.getDefaultPhysicalFont(Unknown Source)
+	at sun.font.FontManager.initialiseDeferredFont(Unknown Source)
+	at sun.font.FontManager.initialiseDeferredFonts(Unknown Source)
+	at sun.java2d.SunGraphicsEnvironment.loadFonts(Unknown Source)
+	at sun.font.FontManager.findFont2D(Unknown Source)
+	at sun.font.FontManager.getDefaultPhysicalFont(Unknown Source)
+	at sun.font.FontManager.initialiseDeferredFont(Unknown Source)
+	at sun.font.FontManager.initialiseDeferredFonts(Unknown Source)
+	at sun.java2d.SunGraphicsEnvironment.loadFonts(Unknown Source)
+	at sun.font.FontManager.findFont2D(Unknown Source)
+	at sun.font.FontManager.getDefaultPhysicalFont(Unknown Source)
+	at sun.font.FontManager.initialiseDeferredFont(Unknown Source)
+	at sun.font.FontManager.initialiseDeferredFonts(Unknown Source)
+	at sun.java2d.SunGraphicsEnvironment.loadFonts(Unknown Source)
+	at sun.font.FontManager.findFont2D(Unknown Source)
+	at sun.font.FontManager.getDefaultPhysicalFont(Unknown Source)
+	at sun.font.FontManager.initialiseDeferredFont(Unknown Source)
+	at sun.font.FontManager.findOtherDeferredFont(Unknown Source)
+	at sun.font.FontManager.findDeferredFont(Unknown Source)
+	at sun.font.FontManager.findFont2D(Unknown Source)
+	at sun.font.FontManager.getDefaultPhysicalFont(Unknown Source)
+	at sun.font.FontManager.initialiseDeferredFont(Unknown Source)
+	at sun.font.FontManager.findOtherDeferredFont(Unknown Source)
+	at sun.font.FontManager.findDeferredFont(Unknown Source)
+	at sun.font.FontManager.findFont2D(Unknown Source)
+	at sun.font.FontManager.getDefaultPhysicalFont(Unknown Source)
+	at sun.font.FontManager.initialiseDeferredFont(Unknown Source)
+	at sun.font.FontManager.findOtherDeferredFont(Unknown Source)
+	at sun.font.FontManager.findDeferredFont(Unknown Source)
+	at sun.font.FontManager.findFont2D(Unknown Source)
+	at sun.font.FontManager.getDefaultPhysicalFont(Unknown Source)
+	at sun.font.FontManager.initialiseDeferredFont(Unknown Source)
+	at sun.font.FontManager.findOtherDeferredFont(Unknown Source)
+	at sun.font.FontManager.findDeferredFont(Unknown Source)
+	at sun.font.FontManager.findFont2D(Unknown Source)
+	at sun.font.FontManager.getDefaultPhysicalFont(Unknown Source)
+	at sun.font.FontManager.initialiseDeferredFont(Unknown Source)
+	at sun.font.FontManager.findOtherDeferredFont(Unknown Source)
+	at sun.font.FontManager.findDeferredFont(Unknown Source)
+	at sun.font.FontManager.findFont2D(Unknown Source)
+	at sun.font.FontManager.getDefaultPhysicalFont(Unknown Source)
+	at sun.font.FontManager.initialiseDeferredFont(Unknown Source)
+	at sun.font.FontManager.findOtherDeferredFont(Unknown Source)
+	at sun.font.FontManager.findDeferredFont(Unknown Source)
+	at sun.font.FontManager.findFont2D(Unknown Source)
+	at sun.font.FontManager.getDefaultPhysicalFont(Unknown Source)
+	at sun.font.FontManager.initialiseDeferredFont(Unknown Source)
+	at sun.font.FontManager.findOtherDeferredFont(Unknown Source)
+	at sun.font.FontManager.findDeferredFont(Unknown Source)
+	at sun.font.FontManager.findFont2D(Unknown Source)
+	at sun.font.FontManager.getDefaultPhysicalFont(Unknown Source)
+	at sun.font.FontManager.initialiseDeferredFont(Unknown Source)
+	at sun.font.FontManager.findOtherDeferredFont(Unknown Source)
+	at sun.font.FontManager.findDeferredFont(Unknown Source)
+	at sun.font.FontManager.findFont2D(Unknown Source)
+	at sun.font.FontManager.getDefaultPhysicalFont(Unknown Source)
+	at sun.font.FontManager.initialiseDeferredFont(Unknown Source)
+	at sun.font.FontManager.findOtherDeferredFont(Unknown Source)
+	at sun.font.FontManager.findDeferredFont(Unknown Source)
+	at sun.font.FontManager.findFont2D(Unknown Source)
+	at sun.font.FontManager.getDefaultPhysicalFont(Unknown Source)
+	at sun.font.FontManager.initialiseDeferredFont(Unknown Source)
+	at sun.font.FontManager.findOtherDeferredFont(Unknown Source)
+	at sun.font.FontManager.findDeferredFont(Unknown Source)
+	at sun.font.FontManager.findFont2D(Unknown Source)
+	at sun.font.FontManager.getDefaultPhysicalFont(Unknown Source)
+	at sun.font.FontManager.initialiseDeferredFont(Unknown Source)
+	at sun.font.FontManager.findOtherDeferredFont(Unknown Source)
+	at sun.font.FontManager.findDeferredFont(Unknown Source)
+	at sun.font.FontManager.findFont2D(Unknown Source)
+	at sun.font.FontManager.getDefaultPhysicalFont(Unknown Source)
+	at sun.font.FontManager.initialiseDeferredFont(Unknown Source)
+	at sun.font.FontManager.findOtherDeferredFont(Unknown Source)
+	at sun.font.FontManager.findDeferredFont(Unknown Source)
+	at sun.font.FontManager.findFont2D(Unknown Source)
+	at sun.font.FontManager.getDefaultPhysicalFont(Unknown Source)
+	at sun.font.FontManager.initialiseDeferredFont(Unknown Source)
+	at sun.font.FontManager.findOtherDeferredFont(Unknown Source)
+	at sun.font.FontManager.findDeferredFont(Unknown Source)
+	at sun.font.FontManager.findFont2D(Unknown Source)
+	at sun.font.FontManager.getDefaultPhysicalFont(Unknown Source)
+	at sun.font.FontManager.initialiseDeferredFont(Unknown Source)
+	at sun.font.FontManager.findOtherDeferredFont(Unknown Source)
+	at sun.font.FontManager.findDeferredFont(Unknown Source)
+	at sun.font.FontManager.findFont2D(Unknown Source)
+	at sun.font.FontManager.getDefaultPhysicalFont(Unknown Source)
+	at sun.font.FontManager.initialiseDeferredFont(Unknown Source)
+	at sun.font.FontManager.findOtherDeferredFont(Unknown Source)
+	at sun.font.FontManager.findDeferredFont(Unknown Source)
+	at sun.font.FontManager.findFont2D(Unknown Source)
+	at sun.font.FontManager.getDefaultPhysicalFont(Unknown Source)
+	at sun.font.FontManager.initialiseDeferredFont(Unknown Source)
+	at sun.font.FontManager.findOtherDeferredFont(Unknown Source)
+	at sun.font.FontManager.findDeferredFont(Unknown Source)
+	at sun.font.FontManager.findFont2D(Unknown Source)
+	at sun.font.FontManager.getDefaultPhysicalFont(Unknown Source)
+	at sun.font.FontManager.initialiseDeferredFont(Unknown Source)
+	at sun.font.FontManager.findOtherDeferredFont(Unknown Source)
+	at sun.font.FontManager.findDeferredFont(Unknown Source)
+	at sun.font.FontManager.findFont2D(Unknown Source)
+	at sun.font.FontManager.getDefaultPhysicalFont(Unknown Source)
+	at sun.font.FontManager.initialiseDeferredFont(Unknown Source)
+	at sun.font.FontManager.findOtherDeferredFont(Unknown Source)
+	at sun.font.FontManager.findDeferredFont(Unknown Source)
+	at sun.font.FontManager.findFont2D(Unknown Source)
+	at sun.font.FontManager.getDefaultPhysicalFont(Unknown Source)
+	at sun.font.FontManager.initialiseDeferredFont(Unknown Source)
+	at sun.font.FontManager.findOtherDeferredFont(Unknown Source)
+	at sun.font.FontManager.findDeferredFont(Unknown Source)
+	at sun.font.FontManager.findFont2D(Unknown Source)
+	at sun.font.FontManager.getDefaultPhysicalFont(Unknown Source)
+	at sun.font.FontManager.initialiseDeferredFont(Unknown Source)
+	at sun.font.FontManager.findOtherDeferredFont(Unknown Source)
+	at sun.font.FontManager.findDeferredFont(Unknown Source)
+	at sun.font.FontManager.findFont2D(Unknown Source)
+	at sun.font.FontManager.getDefaultPhysicalFont(Unknown Source)
+	at sun.font.FontManager.initialiseDeferredFont(Unknown Source)
+	at sun.font.FontManager.findOtherDeferredFont(Unknown Source)
+	at sun.font.FontManager.findDeferredFont(Unknown Source)
+	at sun.font.FontManager.findFont2D(Unknown Source)
+	at sun.font.FontManager.getDefaultPhysicalFont(Unknown Source)
+	at sun.font.FontManager.initialiseDeferredFont(Unknown Source)
+	at sun.font.FontManager.findOtherDeferredFont(Unknown Source)
+	at sun.font.FontManager.findDeferredFont(Unknown Source)
+	at sun.font.FontManager.findFont2D(Unknown Source)
+	at sun.font.FontManager.getDefaultPhysicalFont(Unknown Source)
+	at sun.font.FontManager.initialiseDeferredFont(Unknown Source)
+	at sun.font.FontManager.findJREDeferredFont(Unknown Source)
+	at sun.font.FontManager.findFont2D(Unknown Source)
+	at sun.font.FontManager.getDefaultPhysicalFont(Unknown Source)
+	at sun.font.FontManager.initialiseDeferredFont(Unknown Source)
+	at sun.font.CompositeFont.doDeferredInitialisation(Unknown Source)
+	at sun.font.CompositeFont.getSlotFont(Unknown Source)
+	at sun.font.CompositeGlyphMapper.initMapper(Unknown Source)
+	at sun.font.CompositeGlyphMapper.<init>(Unknown Source)
+	at sun.font.CompositeFont.getMapper(Unknown Source)
+	at sun.font.CompositeFont.canDisplay(Unknown Source)
+	at java.awt.Font.canDisplay(Unknown Source)
+	at sun.font.FontResolver.getIndexFor(Unknown Source)
+	at sun.font.FontResolver.getFontIndex(Unknown Source)
+	at sun.font.FontResolver.getFontIndex(Unknown Source)
+	at java.awt.font.TextLine.getFontAtCurrentPos(Unknown Source)
+	at java.awt.font.TextLayout.standardInit(Unknown Source)
+	at java.awt.font.TextLayout.<init>(Unknown Source)
+	at org.apache.batik.gvt.text.BidiAttributedCharacterIterator.<init>(Unknown
+Source)
+	at org.apache.batik.gvt.renderer.StrokingTextPainter.getTextRuns(Unknown
+Source)
+	at org.apache.batik.gvt.renderer.StrokingTextPainter.getBounds2D(Unknown
+Source)
+	at org.apache.batik.gvt.TextNode.getPrimitiveBounds(Unknown Source)
+	at
+org.apache.batik.gvt.AbstractGraphicsNode.getTransformedPrimitiveBounds(Unknown
+Source)
+	at org.apache.batik.gvt.AbstractGraphicsNode.getTransformedBounds(Unknown
+Source)
+	at
+org.apache.batik.gvt.CompositeGraphicsNode.getTransformedPrimitiveBounds(Unknown
+Source)
+	at org.apache.batik.gvt.AbstractGraphicsNode.getTransformedBounds(Unknown
+Source)
+	at org.apache.batik.gvt.CompositeGraphicsNode.getPrimitiveBounds(Unknown
+Source)
+	at org.apache.batik.gvt.filter.GraphicsNodeRable8Bit.getBounds2D(Unknown
+Source)
+	at org.apache.batik.gvt.filter.GraphicsNodeRable8Bit.createRendering(Unknown
+Source)
+	at org.apache.batik.gvt.renderer.StaticRenderer.renderGNR(Unknown Source)
+	at org.apache.batik.gvt.renderer.StaticRenderer.updateWorkingBuffers(Unknown
+Source)
+	at org.apache.batik.gvt.renderer.StaticRenderer.repaint(Unknown Source)
+	at org.apache.batik.gvt.renderer.StaticRenderer.repaint(Unknown Source)
+	at org.apache.batik.transcoder.image.ImageTranscoder.transcode(Unknown Source)
+	at org.apache.batik.transcoder.XMLAbstractTranscoder.transcode(Unknown Source)
+	at org.apache.batik.transcoder.SVGAbstractTranscoder.transcode(Unknown Source)
+	at MdtSvgDiag_Rasterize._rasterizeIMG(MdtSvgDiag_Rasterize.java:156)
+	at MdtSvgDiag_Rasterize.batchMode(MdtSvgDiag_Rasterize.java:91)
+	at MdtSvgDiag_Rasterize.main(MdtSvgDiag_Rasterize.java:24)
+Report generated.
+Report generation completed.

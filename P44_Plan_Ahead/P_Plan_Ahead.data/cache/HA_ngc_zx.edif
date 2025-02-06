@@ -1,0 +1,183 @@
+(edif HA
+  (edifVersion 2 0 0)
+  (edifLevel 0)
+  (keywordMap (keywordLevel 0))
+  (status
+    (written
+      (timestamp 2024 12 1 11 48 42)
+      (program "Xilinx ngc2edif" (version "P.20131013"))
+      (author "Xilinx. Inc ")
+      (comment "This EDIF netlist is to be used within supported synthesis tools")
+      (comment "for determining resource/timing estimates of the design component")
+      (comment "represented by this netlist.")
+      (comment "Command line: -mdp2sp -w -secure HA.ngc HA.edif ")))
+  (external UNISIMS
+    (edifLevel 0)
+    (technology (numberDefinition))
+    (cell LUT2
+      (cellType GENERIC)
+        (view view_1
+          (viewType NETLIST)
+          (interface
+            (port I0
+              (direction INPUT)
+            )
+            (port I1
+              (direction INPUT)
+            )
+            (port O
+              (direction OUTPUT)
+            )
+          )
+      )
+    )
+    (cell IBUF
+      (cellType GENERIC)
+        (view view_1
+          (viewType NETLIST)
+          (interface
+            (port I
+              (direction INPUT)
+            )
+            (port O
+              (direction OUTPUT)
+            )
+          )
+      )
+    )
+    (cell OBUF
+      (cellType GENERIC)
+        (view view_1
+          (viewType NETLIST)
+          (interface
+            (port I
+              (direction INPUT)
+            )
+            (port O
+              (direction OUTPUT)
+            )
+          )
+      )
+    )
+  )
+
+  (library HA_lib
+    (edifLevel 0)
+    (technology (numberDefinition))
+    (cell HA
+      (cellType GENERIC)
+        (view view_1
+          (viewType NETLIST)
+          (interface
+            (port a
+              (direction INPUT)
+            )
+            (port b
+              (direction INPUT)
+            )
+            (port c
+              (direction OUTPUT)
+            )
+            (port s
+              (direction OUTPUT)
+            )
+            (designator "xc6slx9ftg256-2")
+            (property TYPE (string "HA") (owner "Xilinx"))
+            (property SHREG_MIN_SIZE (string "-1") (owner "Xilinx"))
+            (property SHREG_EXTRACT_NGC (string "Yes") (owner "Xilinx"))
+            (property NLW_UNIQUE_ID (integer 0) (owner "Xilinx"))
+            (property NLW_MACRO_TAG (integer 0) (owner "Xilinx"))
+            (property NLW_MACRO_ALIAS (string "HA_HA") (owner "Xilinx"))
+          )
+          (contents
+            (instance c1
+              (viewRef view_1 (cellRef LUT2 (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+              (property PK_HLUTNM (string "___XLNM___0___c1") (owner "Xilinx"))
+              (property INIT (string "8") (owner "Xilinx"))
+            )
+            (instance (rename Mxor_s_xo_0_1 "Mxor_s_xo<0>1")
+              (viewRef view_1 (cellRef LUT2 (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+              (property PK_HLUTNM (string "___XLNM___0___c1") (owner "Xilinx"))
+              (property INIT (string "6") (owner "Xilinx"))
+            )
+            (instance (rename a_IBUF_renamed_0 "a_IBUF")
+              (viewRef view_1 (cellRef IBUF (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance (rename b_IBUF_renamed_1 "b_IBUF")
+              (viewRef view_1 (cellRef IBUF (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance (rename c_OBUF_renamed_2 "c_OBUF")
+              (viewRef view_1 (cellRef OBUF (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance (rename s_OBUF_renamed_3 "s_OBUF")
+              (viewRef view_1 (cellRef OBUF (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (net a_IBUF
+              (joined
+                (portRef I0 (instanceRef c1))
+                (portRef I0 (instanceRef Mxor_s_xo_0_1))
+                (portRef O (instanceRef a_IBUF_renamed_0))
+              )
+            )
+            (net b_IBUF
+              (joined
+                (portRef I1 (instanceRef c1))
+                (portRef I1 (instanceRef Mxor_s_xo_0_1))
+                (portRef O (instanceRef b_IBUF_renamed_1))
+              )
+            )
+            (net c_OBUF
+              (joined
+                (portRef O (instanceRef c1))
+                (portRef I (instanceRef c_OBUF_renamed_2))
+              )
+            )
+            (net s_OBUF
+              (joined
+                (portRef O (instanceRef Mxor_s_xo_0_1))
+                (portRef I (instanceRef s_OBUF_renamed_3))
+              )
+            )
+            (net a
+              (joined
+                (portRef a)
+                (portRef I (instanceRef a_IBUF_renamed_0))
+              )
+            )
+            (net b
+              (joined
+                (portRef b)
+                (portRef I (instanceRef b_IBUF_renamed_1))
+              )
+            )
+            (net c
+              (joined
+                (portRef c)
+                (portRef O (instanceRef c_OBUF_renamed_2))
+              )
+            )
+            (net s
+              (joined
+                (portRef s)
+                (portRef O (instanceRef s_OBUF_renamed_3))
+              )
+            )
+          )
+      )
+    )
+  )
+
+  (design HA
+    (cellRef HA
+      (libraryRef HA_lib)
+    )
+    (property PART (string "xc6slx9ftg256-2") (owner "Xilinx"))
+  )
+)
+

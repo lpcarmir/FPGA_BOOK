@@ -1,0 +1,6 @@
+14:43:27 **** Auto Build of project P7_Timer_7Seg_bsp ****
+make -k all 
+'Finished building libraries'
+
+14:43:27 Build Finished (took 78ms)
+

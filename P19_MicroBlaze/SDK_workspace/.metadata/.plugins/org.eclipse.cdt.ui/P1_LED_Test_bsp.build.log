@@ -1,0 +1,6 @@
+11:06:03 **** Build of project P1_LED_Test_bsp ****
+make -k all 
+'Finished building libraries'
+
+11:06:03 Build Finished (took 78ms)
+

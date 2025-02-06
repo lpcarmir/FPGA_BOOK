@@ -1,0 +1,6 @@
+12:47:21 **** Auto Build of project P2_LED_Key_bsp ****
+make -k all 
+'Finished building libraries'
+
+12:47:22 Build Finished (took 78ms)
+

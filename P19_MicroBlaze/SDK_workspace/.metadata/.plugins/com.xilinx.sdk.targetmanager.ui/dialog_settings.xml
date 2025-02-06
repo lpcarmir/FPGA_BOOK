@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="C:\Users\lpcarm\Desktop\FPGA_BOOK\P18_MicroBlaze\SDK_workspace\P7_Timer_7Seg\Debug\P7_Timer_7Seg.elf" key="soft_processor_hw_platform-microblaze_0-initElf"/>
+	<item value="C:\Users\lpcarm\Desktop\FPGA_BOOK\P18_MicroBlaze\soft_processor_top.bit" key="soft_processor_hw_platform-bitFile"/>
+	<item value="C:\Users\lpcarm\Desktop\FPGA_BOOK\P18_MicroBlaze\edkBmmFile_bd.bmm" key="soft_processor_hw_platform-bmmFile"/>
+</section>

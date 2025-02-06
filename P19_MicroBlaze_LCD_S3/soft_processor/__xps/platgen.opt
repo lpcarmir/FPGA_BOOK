@@ -1,0 +1,2 @@
+ -p xc3s400pq208-4 -lang vhdl$(PROJECT_SEARCHPATHOPT) $(GLOBAL_SEARCHPATHOPT) -toplevel no -ti soft_processor_i -msg __xps/ise/xmsgprops.lst
+

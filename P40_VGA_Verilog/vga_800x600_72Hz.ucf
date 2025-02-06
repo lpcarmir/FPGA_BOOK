@@ -1,0 +1,26 @@
+net "Red<0>" 	loc="M11";
+net "Red<1>" 	loc="M12";
+net "Red<2>" 	loc="L12";
+net "Red<3>" 	loc="N14";
+net "Red<4>" 	loc="M13";
+
+net "Green<0>" loc="M9";
+net "Green<1>" loc="N9";
+net "Green<2>" loc="P9";
+net "Green<3>" loc="L10";
+net "Green<4>" loc="M10";
+net "Green<5>" loc="P11";
+
+net "Blue<0>" 	loc="P7";
+net "Blue<1>" 	loc="M7";
+net "Blue<2>" 	loc="P8";
+net "Blue<3>" 	loc="N8";
+net "Blue<4>" 	loc="L7";
+
+net "HSync"  	loc="M14";
+net "VSync"   	loc="L13";
+
+net "clk" 		loc="T8";
+#Created by Constraints Editor (xc6slx9-ftg256-2) - 2022/08/05
+NET "clk" TNM_NET = clk;
+TIMESPEC TS_clk = PERIOD "clk" 20 ns HIGH 50%;

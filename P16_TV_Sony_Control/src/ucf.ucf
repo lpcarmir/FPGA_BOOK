@@ -1,0 +1,18 @@
+#7 Segment Section
+NET "Data<0>"   LOC = P126 ;
+NET "Data<1>"   LOC = P123 ;
+NET "Data<2>"   LOC = P124 ;
+NET "Data<3>"   LOC = P125 ;
+NET "Data<4>"   LOC = P117 ;
+NET "Data<5>"   LOC = P119 ;
+NET "Data<6>"   LOC = P120 ;
+NET "Data<7>"   LOC = P122 ;
+NET "Sel<0>"    LOC = P132 ;
+NET "Sel<1>"    LOC = P128 ;
+NET "Sel<2>"    LOC = P130 ;
+NET "Sel<3>"    LOC = P131 ;
+NET "clk"    	 LOC = P80 ;
+NET "hs0038i" 	 LOC = P200 ;
+#Created by Constraints Editor (xc6slx9-ftg256-2) - 2024/11/15
+NET "clk" TNM_NET = clk;
+TIMESPEC TS_clk = PERIOD "clk" 20 ns HIGH 50%;

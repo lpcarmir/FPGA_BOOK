@@ -1,0 +1,10 @@
+
+#Created by Constraints Editor (xc3s400-pq208-4) - 2018/08/03
+NET "clk" TNM_NET = "clk";
+TIMESPEC TS_clk = PERIOD "clk" 5 ns HIGH 50 %;
+
+# PlanAhead Generated physical constraints 
+
+INST "clk_BUFGP" LOC = AB11;
+NET "clk" LOC = AB11;
+

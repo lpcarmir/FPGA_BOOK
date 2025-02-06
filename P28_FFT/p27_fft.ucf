@@ -1,0 +1,4 @@
+net "clkin" loc=T8;
+#Created by Constraints Editor (xc6slx16-ftg256-2) - 2022/05/04
+NET "clkin" TNM_NET = clkin;
+TIMESPEC TS_clkin = PERIOD "clkin" 20 ns HIGH 50%;

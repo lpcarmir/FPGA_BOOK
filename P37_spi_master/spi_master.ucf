@@ -1,0 +1,11 @@
+
+#Created by Constraints Editor (xc3s400-pq208-4) - 2019/06/19
+NET "clk" TNM_NET = clk;
+TIMESPEC TS_clk = PERIOD "clk" 20 ns HIGH 50%;
+
+
+NET "SCK"      LOC = P156 ;
+NET "MISO"     LOC = P161 ;
+NET "MOSI"     LOC = P162 ;
+NET "SS"     	LOC = P155 ;
+NET "clk"     	LOC = P80 ;

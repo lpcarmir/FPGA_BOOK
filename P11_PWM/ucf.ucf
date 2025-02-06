@@ -1,0 +1,10 @@
+net clk loc=T8;
+
+net up loc=C3;
+net down loc=D3;
+
+net pwm loc=P4;
+
+#Created by Constraints Editor (xc6slx9-ftg256-2) - 2024/11/15
+NET "clk" TNM_NET = clk;
+TIMESPEC TS_clk = PERIOD "clk" 20 ns HIGH 50%;

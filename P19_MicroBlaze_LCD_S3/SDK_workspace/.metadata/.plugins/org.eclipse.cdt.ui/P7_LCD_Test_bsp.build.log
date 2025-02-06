@@ -1,0 +1,6 @@
+05:30:04 **** Build of project P7_LCD_Test_bsp ****
+make -k all 
+'Finished building libraries'
+
+05:30:04 Build Finished (took 219ms)
+

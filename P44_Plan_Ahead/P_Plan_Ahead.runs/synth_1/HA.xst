@@ -1,0 +1,9 @@
+set -loop_iteration_limit 1000
+run
+-ifn HA.prj
+-top HA
+-p xc6slx9ftg256-2
+-ofn HA.ngc
+-opt_mode speed
+-opt_level 1
+-netlist_hierarchy rebuilt

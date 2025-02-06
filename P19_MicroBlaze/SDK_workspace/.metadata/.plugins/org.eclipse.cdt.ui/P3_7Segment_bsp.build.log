@@ -1,0 +1,6 @@
+11:06:01 **** Build of project P3_7Segment_bsp ****
+make -k all 
+'Finished building libraries'
+
+11:06:01 Build Finished (took 78ms)
+

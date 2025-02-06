@@ -1,0 +1,4 @@
+net clk loc=T8;
+#Created by Constraints Editor (xc6slx9-ftg256-2) - 2024/11/15
+NET "clk" TNM_NET = clk;
+TIMESPEC TS_clk = PERIOD "clk" 20 ns HIGH 50%;

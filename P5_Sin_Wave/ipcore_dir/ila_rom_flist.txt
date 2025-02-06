@@ -1,0 +1,19 @@
+# Output products list for <ila_rom>
+_xmsgs\pn_parser.xmsgs
+ila_rom.asy
+ila_rom.cdc
+ila_rom.constraints\ila_rom.ucf
+ila_rom.constraints\ila_rom.xdc
+ila_rom.gise
+ila_rom.ncf
+ila_rom.ngc
+ila_rom.sym
+ila_rom.ucf
+ila_rom.vhd
+ila_rom.vho
+ila_rom.xco
+ila_rom.xdc
+ila_rom.xise
+ila_rom_flist.txt
+ila_rom_readme.txt
+ila_rom_xmdf.tcl

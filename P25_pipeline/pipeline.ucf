@@ -1,0 +1,4 @@
+
+#Created by Constraints Editor (xc3s400-pq208-4) - 2024/06/11
+NET "clk" TNM_NET = clk;
+TIMESPEC TS_clk = PERIOD "clk" 250 MHz HIGH 50%;

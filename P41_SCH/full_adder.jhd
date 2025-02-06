@@ -1,0 +1,5 @@
+MODULE full_adder
+	SUBMODULE half_adder
+		INSTANCE u1
+	SUBMODULE half_adder
+		INSTANCE u2

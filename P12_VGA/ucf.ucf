@@ -1,0 +1,27 @@
+net clk loc=T8;
+
+net red(0) loc=M11;
+net red(1) loc=M12;
+net red(2) loc=L12;
+net red(3) loc=N14;
+net red(4) loc=M13;
+
+net green(0) loc=M9;
+net green(1) loc=N9;
+net green(2) loc=P9;
+net green(3) loc=L10;
+net green(4) loc=M10;
+net green(5) loc=P11;
+
+net blue(0) loc=P7;
+net blue(1) loc=M7;
+net blue(2) loc=P8;
+net blue(3) loc=N8;
+net blue(4) loc=L7;
+
+net hsync loc=M14;
+net vsync loc=L13;
+
+#Created by Constraints Editor (xc6slx9-ftg256-2) - 2024/11/15
+NET "clk" TNM_NET = clk;
+TIMESPEC TS_clk = PERIOD "clk" 20 ns HIGH 50%;

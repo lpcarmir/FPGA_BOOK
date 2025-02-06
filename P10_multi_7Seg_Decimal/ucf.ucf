@@ -1,0 +1,21 @@
+net clk loc=T8;
+
+net data(0) loc=C7;
+net data(1) loc=E6;
+net data(2) loc=C5;
+net data(3) loc=F7;
+net data(4) loc=D6;
+net data(5) loc=E7;
+net data(6) loc=D5;
+net data(7) loc=C6;
+
+net sel(0) loc=D8;
+net sel(1) loc=E8;
+net sel(2) loc=F9;
+net sel(3) loc=F10;
+net sel(4) loc=E10;
+net sel(5) loc=D9;
+
+#Created by Constraints Editor (xc6slx9-ftg256-2) - 2024/11/15
+NET "clk" TNM_NET = clk;
+TIMESPEC TS_clk = PERIOD "clk" 20 ns HIGH 50%;

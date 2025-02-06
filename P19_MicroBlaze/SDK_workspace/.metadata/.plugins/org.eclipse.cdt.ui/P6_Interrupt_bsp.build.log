@@ -1,0 +1,6 @@
+12:47:21 **** Auto Build of project P6_Interrupt_bsp ****
+make -k all 
+'Finished building libraries'
+
+12:47:21 Build Finished (took 79ms)
+

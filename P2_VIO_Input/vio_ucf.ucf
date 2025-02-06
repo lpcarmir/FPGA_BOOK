@@ -1,0 +1,7 @@
+net clk loc=T8;
+
+net keys(0) loc=C3;
+net keys(1) loc=D3;
+net keys(2) loc=E4;
+net keys(3) loc=E3;
+net keys(4) loc=L3;

@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan6 -refsym fa_4bit C:/Users/lpcarm/Desktop/FPGA_BOOK/P_SCH/fa_4bit.sch C:/Users/lpcarm/Desktop/FPGA_BOOK/P_SCH/fa_4bit.sym 

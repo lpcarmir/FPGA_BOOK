@@ -1,0 +1,16 @@
+# Output products list for <fir1>
+_xmsgs\pn_parser.xmsgs
+fir1.asy
+fir1.gise
+fir1.mif
+fir1.ngc
+fir1.sym
+fir1.vhd
+fir1.vho
+fir1.xco
+fir1.xise
+fir1COEFF_auto0_0.mif
+fir1_flist.txt
+fir1_readme.txt
+fir1_xmdf.tcl
+fir1filt_decode_rom.mif

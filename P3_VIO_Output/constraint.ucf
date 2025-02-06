@@ -1,0 +1,6 @@
+net clk loc=T8;
+
+net leds(0) loc=P4;
+net leds(1) loc=N5;
+net leds(2) loc=P5;
+net leds(3) loc=M6;

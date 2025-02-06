@@ -1,0 +1,13 @@
+NET "dout<0>"   LOC = P109 ;
+NET "dout<1>"   LOC = P111 ;
+NET "dout<2>"   LOC = P113 ;
+NET "dout<3>"   LOC = P114 ;
+NET "en"        LOC = P108 ;
+NET "RW"       LOC = P107 ;
+NET "RS"       LOC = P106 ;
+
+///NET "s_data"     LOC = P71  ;
+//NET "s_clock"     LOC = P68  ;
+//NET "PS2_SDA2"     LOC = P74  ;
+//NET "PS2_SCL2"     LOC = P72  ;
+NET "clk"     LOC = P80  ;

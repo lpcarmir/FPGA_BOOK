@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="8">
+	<Run Id="synth_1" Type="Ft3:Synth" SrcSet="sources_1" Part="xc6slx9ftg256-2" LaunchPart="xc6slx9ftg256-2" ConstrsSet="constrs_1" Description="PlanAhead Defaults (XST defaults with hierarchy)" State="current" Dir="$PRUNDIR/synth_1" LaunchTime="1733041116">
+		<File Type="XST-NGC" Name="HA.ngc"/>
+		<File Type="RUN-STRAT" Name="$PDATADIR/runs/synth_1/synth_1.psg"/>
+		<File Type="XST-SRP" Name="HA.srp"/>
+		<File Type="PA-XST" Name="HA.xst"/>
+		<File Type="RUN-SRCS" Name="$PDATADIR/runs/synth_1/sources.xml"/>
+		<File Type="PA-XSTPRJ" Name="HA.prj"/>
+		<File Type="RUN-CONSTRS" Name="$PDATADIR/runs/synth_1/constrs_in.xml"/>
+	</Run>
+	<Run Id="impl_1" Type="Ft2:EntireDesign" SynthRun="synth_1" Part="xc6slx9ftg256-2" LaunchPart="xc6slx9ftg256-2" ConstrsSet="constrs_1" Description="ISE Defaults, including packing registers in IOs off" State="current" Dir="$PRUNDIR/impl_1" LaunchTime="1733041123">
+		<File Type="MAP-PSR" Name="HA.psr"/>
+		<File Type="PA-EDIF" Name="HA.edf"/>
+		<File Type="PAR-NCD" Name="HA_routed.ncd"/>
+		<File Type="PA-UCF" Name="HA.ucf"/>
+		<File Type="PAR-PAD" Name="HA_routed_pad.txt"/>
+		<File Type="PAR-PAR" Name="HA_routed.par"/>
+		<File Type="PAR-UNR" Name="HA_routed.unroutes"/>
+		<File Type="BG-BIT" Name="HA.bit"/>
+		<File Type="BG-DRC" Name="HA.drc"/>
+		<File Type="PA-CONSTRSDIR" Name=".constrs"/>
+		<File Type="BG-BGN" Name="HA.bgn"/>
+		<File Type="TRCE-TWR" Name="HA.twr"/>
+		<File Type="TRCE-TWX" Name="HA.twx"/>
+		<File Type="XDL-XDL" Name="HA_routed.xdl"/>
+		<File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+		<File Type="WBT-LOG" Name="webtalk.log"/>
+		<File Type="RUN-CONSTRS" Name="$PDATADIR/runs/impl_1/constrs_in.xml"/>
+		<File Type="RUN-STRAT" Name="$PDATADIR/runs/impl_1/impl_1.psg"/>
+		<File Type="NGDB-NGD" Name="HA.ngd"/>
+		<File Type="NGDB-BLD" Name="HA.bld"/>
+		<File Type="MAP-NCD" Name="HA.ncd"/>
+		<File Type="MAP-PCF" Name="HA.pcf"/>
+		<File Type="MAP-MRP" Name="HA.mrp"/>
+		<File Type="MAP-MAP" Name="HA.map"/>
+	</Run>
+</Runs>
+

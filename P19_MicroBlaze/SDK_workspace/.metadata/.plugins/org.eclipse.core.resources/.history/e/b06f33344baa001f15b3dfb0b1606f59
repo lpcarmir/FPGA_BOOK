@@ -1,0 +1,191 @@
+/*
+ * main.c
+ *
+ *  Created on: Nov 24, 2024
+ *      Author: lpcarm
+ */
+
+#include <stdint.h>
+#include <xparameters.h>
+#include "xtmrctr.h"
+#include "xparameters.h"
+#include "xintc.h"
+#include "xil_exception.h"
+
+#define PORTA (*(uint32_t *)0x81400000)
+#define DDRA (*(uint32_t *)0x81400004)
+
+#define TCSR (*(uint32_t *)0x83C00000)
+#define TLR (*(uint32_t *)0x83C00004)
+#define TCR (*(uint32_t *)0x83C00008)
+
+#define XTC_CSR_CASC_MASK		0x00000800 /**< Cascade Mode */
+
+
+typedef struct
+{
+	union
+	{
+		struct
+		{
+			u16 captureEn:1;
+			u16 downCount:1;
+			u16 extOutput:1;
+			u16 extInput:1;
+			u16 arr:1;
+			u16 load:1;
+			u16 intEn:1;
+			u16 onlySpecificTimer:1;
+			u16 intFlag:1;
+			u16 pwmEn:1;
+			u16 timEn:1;
+			u16 cascadeMode:1;
+		};
+		u16 ALL;
+	};
+}TIM_CTRL_STAT_t;
+#define TCSR_T ((TIM_CTRL_STAT_t *)0x83C00000)
+
+void delay(uint32_t x);
+void set_7seg_data(uint8_t data);
+void set_7seg_select(uint8_t select);
+void timer_InterruptHandler(void);
+
+const uint8_t ss_code[]=
+{
+		0xFC,0x60,0xDA,0xF2,0x66,0xB6,0xBE,0xE0,
+		0xFE,0xF6,0xEE,0x3E,0x9C,0x7A,0x9E,0x8E
+};
+uint32_t cnt;
+
+XTmrCtr TimerCounter;
+XIntc InterruptController;
+int Status;
+
+int main()
+{
+	DDRA=0x0000F0;
+	//Status = XIntc_Initialize(&intc, XPAR_INTC_0_DEVICE_ID);
+	Status = XTmrCtr_Initialize(&TimerCounter, XPAR_XPS_TIMER_0_DEVICE_ID);
+	Status = XTmrCtr_SelfTest(&TimerCounter, 0);
+
+	/*Status = XIntc_Connect(&intc, XPAR_XPS_INTC_0_XPS_TIMER_0_INTERRUPT_INTR,
+					//(XInterruptHandler)timer_InterruptHandler,
+					(XInterruptHandler)XTmrCtr_InterruptHandler,
+					(void *)&TimerCounter);
+	XIntc_Enable(&intc, XPAR_XPS_INTC_0_XPS_TIMER_0_INTERRUPT_INTR);
+	XTmrCtr_SetHandler(&TimerCounter, (XTmrCtr_Handler)timer_InterruptHandler,&TimerCounter);
+	XTmrCtr_SetOptions(&TimerCounter, 0,
+					XTC_INT_MODE_OPTION | XTC_AUTO_RELOAD_OPTION);
+
+	XTmrCtr_SetResetValue(&TimerCounter, 0, 0xF0000000);
+	XTmrCtr_Start(&TimerCounter, 0);*/
+
+	Status = XIntc_Initialize(&InterruptController, XPAR_INTC_0_DEVICE_ID);
+	// Connect the interrupt handler to the ISR
+	Status = XIntc_Connect(&InterruptController, XPAR_INTC_0_TMRCTR_0_VEC_ID,
+	(XInterruptHandler)timer_InterruptHandler, 0);
+	// Start the interrupt controller
+	Status = XIntc_Start(&InterruptController, XIN_REAL_MODE);
+	// Enable interrupts in the MicroBlaze processor
+	XIntc_Enable(&InterruptController, XPAR_INTC_0_TMRCTR_0_VEC_ID);
+	Xil_ExceptionInit();
+	Xil_ExceptionRegisterHandler(XIL_EXCEPTION_ID_INT,
+	(Xil_ExceptionHandler)XIntc_InterruptHandler,
+	&InterruptController);
+
+	//TLR=0xFFFF;
+	/*TCSR_T->load=1;
+	TCSR_T->arr=1;
+	TCSR_T->timEn=1;
+	TCSR_T->intEn=1;*/
+	//TCSR=(1<<10)|(1<<6)|(1<<5)|(1<<4);
+	//TLR=0xFFFF;
+
+	timer_InterruptHandler();
+	while(1)
+	{
+		//timer_InterruptHandler();
+		cnt++;
+		if(cnt>999999)
+			cnt=0;
+
+		set_7seg_select(0x1F);//yekan
+		set_7seg_data(~TCR);
+		delay(20);
+		set_7seg_select(0x2F);//dahgan
+		set_7seg_data(~(TCSR>>8));
+		delay(20);
+	}
+	return 0;
+}
+
+void timer_InterruptHandler(void)
+{
+	static uint8_t state;
+	static uint32_t data;
+	switch(state)
+	{
+	case 0:
+		data=cnt;
+		set_7seg_select(0x1F);//yekan
+		set_7seg_data(~ss_code[data%10]);
+		data=data/10;
+		state=1;
+		break;
+	case 1:
+		set_7seg_select(0x2F);//dahgan
+		set_7seg_data(~ss_code[data%10]);
+		data=data/10;
+		state=2;
+		break;
+	case 2:
+		set_7seg_select(0x37);//sadgan
+		set_7seg_data(~ss_code[data%10]);
+		data=data/10;
+		state=3;
+		break;
+	case 3:
+		set_7seg_select(0x3B);//hezargan
+		set_7seg_data(~ss_code[data%10]);
+		data=data/10;
+		state=4;
+		break;
+	case 4:
+		set_7seg_select(0x3D);//dah hezargan
+		set_7seg_data(~ss_code[data%10]);
+		data=data/10;
+		state=5;
+		break;
+	case 5:
+		set_7seg_select(0x3E);//sad hezargan
+		set_7seg_data(~ss_code[data%10]);
+		data=data/10;
+		state=0;
+		break;
+	}
+}
+
+void set_7seg_data(uint8_t data)
+{
+	PORTA&=0x3FFF;
+	PORTA|=data<<14;
+}
+
+void set_7seg_select(uint8_t select)
+{
+	PORTA&=0x3FC0FF;
+	PORTA|=select<<8;
+}
+
+void delay(uint32_t x)
+{
+	uint32_t i,j;
+	for(j=0;j<x;j++)
+	{
+		for(i=0;i<1000;i++);
+	}
+}
+
+
+

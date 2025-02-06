@@ -1,0 +1,5 @@
+NET "SCK"      LOC = P156 ;
+NET "MISO"     LOC = P161 ;
+NET "MOSI"     LOC = P162 ;
+NET "SS"     	LOC = P155 ;
+NET "clk"     	LOC = P80 ;

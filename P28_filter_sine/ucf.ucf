@@ -1,0 +1,5 @@
+NET "clk" LOC = P80;
+#Created by Constraints Editor (xc3s400-pq208-4) - 2024/06/01
+NET "clk" TNM_NET = "clk";
+TIMESPEC TS_clk = PERIOD "clk" 20 ns HIGH 50 %;
+

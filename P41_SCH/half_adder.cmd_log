@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan6 -refsym half_adder C:/Users/lpcarm/Desktop/FPGA_BOOK/P_SCH/half_adder.sch C:/Users/lpcarm/Desktop/FPGA_BOOK/P_SCH/half_adder.sym 

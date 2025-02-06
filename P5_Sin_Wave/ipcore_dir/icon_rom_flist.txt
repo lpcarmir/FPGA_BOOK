@@ -1,0 +1,17 @@
+# Output products list for <icon_rom>
+_xmsgs\pn_parser.xmsgs
+icon_rom.asy
+icon_rom.constraints\icon_rom.ucf
+icon_rom.constraints\icon_rom.xdc
+icon_rom.gise
+icon_rom.ngc
+icon_rom.sym
+icon_rom.ucf
+icon_rom.vhd
+icon_rom.vho
+icon_rom.xco
+icon_rom.xdc
+icon_rom.xise
+icon_rom_flist.txt
+icon_rom_readme.txt
+icon_rom_xmdf.tcl
